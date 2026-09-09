@@ -89,9 +89,9 @@ Hi, I'm **Om Talaviya** — an AI & Systems Engineer specialized in building pro
     </td>
     <td width="50%" align="center">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/card-activity-dark.svg">
-        <source media="(prefers-color-scheme: light)" srcset="assets/card-activity-light.svg">
-        <img src="assets/card-activity-dark.svg" width="100%" alt="Development Profile" />
+        <source media="(prefers-color-scheme: dark)" srcset="assets/metrics.isocalendar.svg">
+        <source media="(prefers-color-scheme: light)" srcset="assets/metrics.isocalendar.svg">
+        <img src="assets/metrics.isocalendar.svg" width="100%" alt="3D Isometric Contributions Calendar" />
       </picture>
     </td>
   </tr>
