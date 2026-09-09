@@ -35,6 +35,9 @@ jobs:
       - name: Generate Stat and Project Cards
         run: |
           python scripts/cards.py --user ${{ github.repository_owner }} --out assets --projects assets/projects.json --accent "#38bdf8"
+          python scripts/generate_terminal.py
+          python scripts/generate_architecture.py
+          python scripts/generate_status.py
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
 
