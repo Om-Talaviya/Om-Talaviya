@@ -1,15 +1,18 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/portrait-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/portrait-light.svg">
-  <img src="assets/portrait-dark.svg" width="140" alt="Om Talaviya Dot Matrix Portrait" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-portrait-rounded.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-portrait-rounded.png">
+  <img src="assets/hero-portrait-rounded.png" width="340" alt="Om Talaviya" style="max-width: 100%; height: auto; border-radius: 20px;" />
 </picture>
 
 <br/>
 
+# OM TALAVIYA
+### `AI` &bull; `SOFTWARE` &bull; `DATA`
+
 <a href="https://github.com/Om-Talaviya">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=900&color=38BDF8&center=true&vCenter=true&width=620&lines=Om+Talaviya;AI+%26+Systems+Engineer;Building+Agentic+Platforms+%26+Multimodal+RAG;Full-Stack+Architect" alt="Om Talaviya Typing Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2600&pause=900&color=38BDF8&center=true&vCenter=true&width=620&lines=Building+Agentic+Platforms+%26+Universal+Coding+Agents;Architecting+Multimodal+RAG+Pipelines;Specialized+in+Model+Routing+%26+Distributed+Systems" alt="Om Talaviya Typing Banner" />
 </a>
 
 <p align="center">
@@ -75,20 +78,30 @@ Hi, I'm **Om Talaviya** — an AI & Systems Engineer specialized in building pro
 
 ### `~/` activity-stream
 
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics.isocalendar.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/metrics.isocalendar.svg">
+  <img src="assets/metrics.isocalendar.svg" width="100%" alt="3D Isometric Contribution Calendar" />
+</picture>
+
+<br/><br/>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-light.svg">
   <img src="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-dark.svg" width="100%" alt="Contribution Snake" />
 </picture>
 
-<br/>
+<br/><br/>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
-    <img src="assets/card-stats-dark.svg" width="480" alt="GitHub Engineering Metrics" />
-  </picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
+  <img src="assets/card-stats-dark.svg" width="480" alt="GitHub Engineering Metrics" />
+</picture>
+
 </div>
 
 ---

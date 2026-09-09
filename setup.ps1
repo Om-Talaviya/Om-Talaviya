@@ -25,9 +25,16 @@ if (Get-Command "python" -ErrorAction SilentlyContinue) {
     Write-Error "Python 3.10+ is required to run the profile generators."
 }
 
-Write-Host "`n[1/4] Generating Dot-Matrix Portrait..." -ForegroundColor Yellow
+Write-Host "`n[1/5] Processing Hero Portrait..." -ForegroundColor Yellow
 if ($Image -and (Test-Path $Image)) {
-    & $pythonCmd scripts/dotify.py $Image -o assets/portrait --cols 88 --equalize --detail 0.5 --accent "#38bdf8"
+    & $pythonCmd scripts/process_portrait.py $Image "assets/hero-portrait.png"
+} elseif (Test-Path "assets/portrait-source.jpg") {
+    & $pythonCmd scripts/process_portrait.py "assets/portrait-source.jpg" "assets/hero-portrait.png"
+}
+
+Write-Host "`n[2/5] Generating Dot-Matrix Portrait..." -ForegroundColor Yellow
+if (Test-Path "assets/hero-portrait.png") {
+    & $pythonCmd scripts/dotify.py assets/hero-portrait.png -o assets/portrait --cols 100 --equalize --detail 0.5 --accent "#38bdf8"
 } else {
     & $pythonCmd scripts/dotify.py -o assets/portrait --cols 88 --equalize --detail 0.5 --accent "#38bdf8"
 }
