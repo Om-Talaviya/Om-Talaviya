@@ -77,9 +77,8 @@ def process_transparent_portrait(input_path, output_path, target_size=(800, 800)
     # 1. Square crop centered on subject
     dim = min(w, h)
     cx = int(w * 0.5)
-    cy = int(h * 0.48)
     left = max(0, min(cx - dim // 2, w - dim))
-    top = max(0, min(cy - dim // 2, h - dim))
+    top = 0 if h <= w else max(0, min(int(h * 0.45) - dim // 2, h - dim))
     cropped = transparent_img.crop((left, top, left + dim, top + dim))
 
     # 2. Resize with Lanczos to high-resolution target
@@ -90,10 +89,10 @@ def process_transparent_portrait(input_path, output_path, target_size=(800, 800)
     rgb_img = Image.merge("RGB", (r_ch, g_ch, b_ch))
     
     contrast_enhancer = ImageEnhance.Contrast(rgb_img)
-    enhanced = contrast_enhancer.enhance(1.03)
+    enhanced = contrast_enhancer.enhance(1.02)
 
     sharp_enhancer = ImageEnhance.Sharpness(enhanced)
-    enhanced = sharp_enhancer.enhance(1.04)
+    enhanced = sharp_enhancer.enhance(1.03)
 
     er, eg, eb = enhanced.split()
     final_rgba = Image.merge("RGBA", (er, eg, eb, a_ch))
@@ -112,8 +111,8 @@ def process_transparent_portrait(input_path, output_path, target_size=(800, 800)
 
 
 if __name__ == "__main__":
-    src = r"C:\Users\OM\.gemini\antigravity-ide\brain\77a0457b-d8d8-4c95-b478-e4273e9e6ef5\.user_uploaded\media_1788981608969.jpg"
-    dest = r"C:\Users\OM\.gemini\antigravity-ide\scratch\Om-Talaviya\assets\hero-portrait.png"
+    src = r"assets/portrait-source.jpg"
+    dest = r"assets/hero-portrait.png"
 
     if len(sys.argv) > 1:
         src = sys.argv[1]
