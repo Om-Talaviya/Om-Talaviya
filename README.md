@@ -19,7 +19,7 @@
   <a href="https://linkedin.com/in/om-talaviya-558610249"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://github.com/Om-Talaviya"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://instagram.com/basically.om"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
-  <a href="mailto:om.talaviya.work@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
+  <a href="mailto:talaviyaom09@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
   <a href="https://komarev.com/ghpvc/?username=Om-Talaviya&color=38bdf8&style=for-the-badge&label=VIEWS"><img src="https://komarev.com/ghpvc/?username=Om-Talaviya&color=38bdf8&style=for-the-badge&label=VIEWS" alt="Profile Views" /></a>
 </p>
 
