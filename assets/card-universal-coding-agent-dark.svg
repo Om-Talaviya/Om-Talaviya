@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 170" width="420" height="170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 180" width="440" height="180">
   <!-- Card Base -->
-  <rect width="420" height="170" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <rect width="440" height="180" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
   
   <!-- Left Accent Bar -->
-  <rect x="0" y="16" width="3.5" height="138" rx="1.75" fill="#38bdf8"/>
+  <rect x="0" y="16" width="4" height="148" rx="2" fill="#38bdf8"/>
 
   <!-- Repository Title -->
   <g transform="translate(24, 34)">
@@ -12,12 +12,11 @@
     <text x="26" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#58a6ff">Universal-Coding-Agent</text>
   </g>
 
-  <!-- Description -->
-  <text x="24" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e" line-height="1.4">Provider-agnostic universal coding agent</text>
-  <text x="24" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">orchestrating frontier LLMs with autonomous tool ...</text>
+  <!-- Description Lines -->
+  <text x="24" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">Provider-agnostic universal coding agent</text><text x="24" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">orchestrating frontier LLMs with autonomous tool</text><text x="24" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">loops via OpenCode.</text>
 
   <!-- Card Meta Footer -->
-  <g transform="translate(24, 142)">
+  <g transform="translate(24, 150)">
     <!-- Language -->
     <circle cx="5" cy="-4" r="5" fill="#3178c6"/>
     <text x="16" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#7d8590">TypeScript</text>

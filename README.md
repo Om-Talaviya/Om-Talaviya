@@ -78,30 +78,33 @@ Hi, I'm **Om Talaviya** — an AI & Systems Engineer specialized in building pro
 
 ### `~/` activity-stream
 
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
+        <img src="assets/card-stats-dark.svg" width="100%" alt="GitHub Engineering Metrics" />
+      </picture>
+    </td>
+    <td width="50%" align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/card-activity-dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="assets/card-activity-light.svg">
+        <img src="assets/card-activity-dark.svg" width="100%" alt="Development Profile" />
+      </picture>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics.isocalendar.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/metrics.isocalendar.svg">
-  <img src="assets/metrics.isocalendar.svg" width="100%" alt="3D Isometric Contribution Calendar" />
-</picture>
-
-<br/><br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-light.svg">
-  <img src="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-dark.svg" width="100%" alt="Contribution Snake" />
-</picture>
-
-<br/><br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
-  <img src="assets/card-stats-dark.svg" width="480" alt="GitHub Engineering Metrics" />
-</picture>
-
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-light.svg">
+    <img src="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-dark.svg" width="100%" alt="Contribution Snake" />
+  </picture>
 </div>
 
 ---
@@ -150,17 +153,6 @@ Hi, I'm **Om Talaviya** — an AI & Systems Engineer specialized in building pro
     </td>
   </tr>
 </table>
-
-<sub>
-
-| Repository | Primary Stack | Architecture Focus |
-| :--- | :--- | :--- |
-| [**Universal-Coding-Agent**](https://github.com/Om-Talaviya/Universal-Coding-Agent) | TypeScript, Node.js, OpenCode | Provider-agnostic AI agent orchestrating coding models |
-| [**agentic-multimodal-research-platform**](https://github.com/Om-Talaviya/agentic-multimodal-research-platform) | Python, FastAPI, Async Orchestration | Multimodal RAG, dynamic model routing, and agent execution |
-| [**knowledge-intelligence-platform**](https://github.com/Om-Talaviya/knowledge-intelligence-platform) | Python, Hybrid Retrieval, Vector DBs | Enterprise document intelligence with citations and automated eval |
-| [**food-production-cost-optimizer**](https://github.com/Om-Talaviya/food-production-cost-optimizer) | React, Express, Vite, Statistical Forecasting | Batch economics simulation, what-if engine, and AI advisor |
-
-</sub>
 
 ---
 

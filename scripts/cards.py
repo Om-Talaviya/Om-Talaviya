@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-cards.py - Self-Hosted GitHub Stat Card & Project Cards Generator
-Generates premium dark and light mode SVG cards without relying on external fragile servers.
+cards.py - Self-Hosted GitHub Stat Card, Activity Velocity Card & Project Cards Generator
+Generates premium dark and light mode SVG cards with perfect 2-column alignment and no truncated pitches.
 """
 
 import argparse
@@ -51,7 +51,7 @@ def fetch_user_stats(username, token=None):
     user_data = fetch_json(f"https://api.github.com/users/{username}", token)
     repos_data = fetch_json(f"https://api.github.com/users/{username}/repos?per_page=100&type=owner", token)
 
-    public_repos = user_data.get("public_repos", 0) if user_data else 5
+    public_repos = user_data.get("public_repos", 0) if user_data else 6
     followers = user_data.get("followers", 0) if user_data else 0
     created_at = user_data.get("created_at", "2025")[:4] if user_data else "2025"
 
@@ -109,7 +109,7 @@ def fetch_user_stats(username, token=None):
     }
 
 
-def render_stat_card(stats, theme="dark", accent="#38bdf8", width=420, height=200):
+def render_stat_card(stats, theme="dark", accent="#38bdf8", width=440, height=210):
     if theme == "dark":
         bg_color = "#0d1117"
         card_border = "#30363d"
@@ -138,13 +138,13 @@ def render_stat_card(stats, theme="dark", accent="#38bdf8", width=420, height=20
         tiles.append({"label": "Active Since", "val": str(stats["since"])})
 
     svg_tiles = []
-    tile_w = 175
-    tile_h = 56
+    tile_w = 186
+    tile_h = 60
     positions = [
-        (22, 60),
-        (220, 60),
-        (22, 126),
-        (220, 126)
+        (22, 64),
+        (232, 64),
+        (22, 134),
+        (232, 134)
     ]
 
     for i, t in enumerate(tiles[:4]):
@@ -152,8 +152,8 @@ def render_stat_card(stats, theme="dark", accent="#38bdf8", width=420, height=20
         svg_tiles.append(f"""
         <g transform="translate({tx}, {ty})">
             <rect width="{tile_w}" height="{tile_h}" rx="8" fill="{tile_bg}" stroke="{tile_border}" stroke-width="1"/>
-            <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="{text_secondary}">{t['label'].upper()}</text>
-            <text x="14" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="{accent_color}">{t['val']}</text>
+            <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="{text_secondary}">{t['label'].upper()}</text>
+            <text x="14" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="{accent_color}">{t['val']}</text>
         </g>
         """)
 
@@ -165,14 +165,96 @@ def render_stat_card(stats, theme="dark", accent="#38bdf8", width=420, height=20
     <circle cx="6" cy="-4" r="5" fill="{accent_color}"/>
     <text x="20" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="{text_primary}">ENGINEERING METRICS</text>
   </g>
-  <line x1="22" y1="46" x2="{width - 22}" y2="46" stroke="{tile_border}" stroke-width="1"/>
+  <line x1="22" y1="48" x2="{width - 22}" y2="48" stroke="{tile_border}" stroke-width="1"/>
 
   {''.join(svg_tiles)}
 </svg>"""
     return svg
 
 
-def render_project_card(repo_data, override_desc=None, theme="dark", accent="#38bdf8", width=420, height=170):
+def render_activity_velocity_card(stats, theme="dark", accent="#38bdf8", width=440, height=210):
+    if theme == "dark":
+        bg_color = "#0d1117"
+        card_border = "#30363d"
+        text_primary = "#f0f6fc"
+        text_secondary = "#8b949e"
+        tile_bg = "#161b22"
+        tile_border = "#21262d"
+        accent_color = accent
+        badge_bg = "rgba(56, 189, 248, 0.12)"
+    else:
+        bg_color = "#ffffff"
+        card_border = "#d0d7de"
+        text_primary = "#1f2328"
+        text_secondary = "#656d76"
+        tile_bg = "#f6f8fa"
+        tile_border = "#eaeef2"
+        accent_color = "#0284c7" if accent == "#38bdf8" else accent
+        badge_bg = "rgba(2, 132, 199, 0.10)"
+
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">
+  <rect width="{width}" height="{height}" rx="12" fill="{bg_color}" stroke="{card_border}" stroke-width="1"/>
+  
+  <!-- Header -->
+  <g transform="translate(22, 34)">
+    <circle cx="6" cy="-4" r="5" fill="{accent_color}"/>
+    <text x="20" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="{text_primary}">DEVELOPMENT PROFILE</text>
+  </g>
+  <line x1="22" y1="48" x2="{width - 22}" y2="48" stroke="{tile_border}" stroke-width="1"/>
+
+  <!-- Row 1: Focus Area -->
+  <g transform="translate(22, 64)">
+    <rect width="396" height="60" rx="8" fill="{tile_bg}" stroke="{tile_border}" stroke-width="1"/>
+    <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="{text_secondary}">SPECIALIZATION</text>
+    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="{accent_color}">Agentic AI &bull; Multimodal RAG &bull; Distributed Systems</text>
+  </g>
+
+  <!-- Row 2: Status & Mode -->
+  <g transform="translate(22, 134)">
+    <rect width="186" height="60" rx="8" fill="{tile_bg}" stroke="{tile_border}" stroke-width="1"/>
+    <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="{text_secondary}">ACTIVITY STATUS</text>
+    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="{text_primary}">Daily Engineering</text>
+  </g>
+
+  <g transform="translate(232, 134)">
+    <rect width="186" height="60" rx="8" fill="{tile_bg}" stroke="{tile_border}" stroke-width="1"/>
+    <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="{text_secondary}">PRIMARY RUNTIME</text>
+    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="{text_primary}">Python &bull; TypeScript</text>
+  </g>
+</svg>"""
+    return svg
+
+
+def wrap_text_lines(text, max_chars_per_line=48, max_lines=3):
+    words = text.split(" ")
+    lines = []
+    current_line = []
+    current_len = 0
+
+    for word in words:
+        if current_len + len(word) + (1 if current_line else 0) <= max_chars_per_line:
+            current_line.append(word)
+            current_len += len(word) + (1 if len(current_line) > 1 else 0)
+        else:
+            if len(lines) < max_lines - 1:
+                lines.append(" ".join(current_line))
+                current_line = [word]
+                current_len = len(word)
+            else:
+                current_line.append(word)
+                break
+
+    if current_line and len(lines) < max_lines:
+        lines.append(" ".join(current_line))
+
+    # Clean up trailing truncation if needed
+    for i in range(len(lines)):
+        lines[i] = html.escape(lines[i])
+
+    return lines[:max_lines]
+
+
+def render_project_card(repo_data, override_desc=None, theme="dark", accent="#38bdf8", width=440, height=180):
     if theme == "dark":
         bg_color = "#0d1117"
         card_border = "#30363d"
@@ -194,38 +276,26 @@ def render_project_card(repo_data, override_desc=None, theme="dark", accent="#38
 
     name = repo_data.get("name", "Project")
     raw_desc = override_desc or repo_data.get("description") or "Autonomous software system."
-    desc = html.escape(raw_desc)
+    lines = wrap_text_lines(raw_desc, max_chars_per_line=50, max_lines=3)
+    
     lang = repo_data.get("language") or "Python"
     lang_color = LANGUAGE_COLORS.get(lang, "#8b949e")
     stars = repo_data.get("stargazers_count", 0)
     forks = repo_data.get("forks_count", 0)
 
-    # Truncate description into 2 wrapped lines if needed
-    words = desc.split(" ")
-    line1 = []
-    line2 = []
-    cur_len = 0
-    for w in words:
-        if cur_len + len(w) < 46 and not line2:
-            line1.append(w)
-            cur_len += len(w) + 1
-        else:
-            if len(" ".join(line2)) + len(w) < 48:
-                line2.append(w)
-            else:
-                if not line2[-1].endswith("..."):
-                    line2.append("...")
-                break
-
-    line1_str = " ".join(line1)
-    line2_str = " ".join(line2)
+    desc_svg = []
+    y_start = 68
+    for i, line in enumerate(lines):
+        desc_svg.append(
+            f'<text x="24" y="{y_start + i * 20}" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="{text_desc}">{line}</text>'
+        )
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">
   <!-- Card Base -->
   <rect width="{width}" height="{height}" rx="12" fill="{bg_color}" stroke="{card_border}" stroke-width="1"/>
   
   <!-- Left Accent Bar -->
-  <rect x="0" y="16" width="3.5" height="{height - 32}" rx="1.75" fill="{accent_color}"/>
+  <rect x="0" y="16" width="4" height="{height - 32}" rx="2" fill="{accent_color}"/>
 
   <!-- Repository Title -->
   <g transform="translate(24, 34)">
@@ -234,12 +304,11 @@ def render_project_card(repo_data, override_desc=None, theme="dark", accent="#38
     <text x="26" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="{text_primary}">{name}</text>
   </g>
 
-  <!-- Description -->
-  <text x="24" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="{text_desc}" line-height="1.4">{line1_str}</text>
-  <text x="24" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="{text_desc}">{line2_str}</text>
+  <!-- Description Lines -->
+  {''.join(desc_svg)}
 
   <!-- Card Meta Footer -->
-  <g transform="translate(24, 142)">
+  <g transform="translate(24, 150)">
     <!-- Language -->
     <circle cx="5" cy="-4" r="5" fill="{lang_color}"/>
     <text x="16" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="{text_meta}">{lang}</text>
@@ -261,7 +330,7 @@ def render_project_card(repo_data, override_desc=None, theme="dark", accent="#38
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate self-hosted stat card and project cards.")
+    parser = argparse.ArgumentParser(description="Generate self-hosted stat card, activity card and project cards.")
     parser.add_argument("--user", required=True, help="GitHub username")
     parser.add_argument("--token", help="GitHub API token (optional)")
     parser.add_argument("--out", default="assets", help="Output directory")
@@ -273,7 +342,7 @@ def main():
     token = args.token or os.getenv("GITHUB_TOKEN") or os.getenv("METRICS_TOKEN")
     os.makedirs(args.out, exist_ok=True)
 
-    # 1. Fetch & Generate Stat Card
+    # 1. Fetch & Generate Stat Card & Activity Velocity Card
     print(f"Fetching statistics for @{args.user}...")
     stats = fetch_user_stats(args.user, token=token)
     
@@ -284,7 +353,16 @@ def main():
         f.write(stat_dark)
     with open(os.path.join(args.out, "card-stats-light.svg"), "w", encoding="utf-8") as f:
         f.write(stat_light)
-    print("Generated stat cards: card-stats-dark.svg and card-stats-light.svg")
+
+    activity_dark = render_activity_velocity_card(stats, theme="dark", accent=args.accent)
+    activity_light = render_activity_velocity_card(stats, theme="light", accent=args.accent)
+
+    with open(os.path.join(args.out, "card-activity-dark.svg"), "w", encoding="utf-8") as f:
+        f.write(activity_dark)
+    with open(os.path.join(args.out, "card-activity-light.svg"), "w", encoding="utf-8") as f:
+        f.write(activity_light)
+
+    print("Generated stat cards: card-stats-*.svg and card-activity-*.svg")
 
     # 2. Project Cards
     projects_list = []
