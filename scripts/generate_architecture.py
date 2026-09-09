@@ -36,16 +36,6 @@ def render_architecture_svg(output_path="assets/architecture-dark.svg", theme="d
         tag_bg = "rgba(2, 132, 199, 0.08)"
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">
-  <defs>
-    <linearGradient id="glowGrad-{theme}" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="{accent}" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="{accent}" stop-opacity="0.2"/>
-    </linearGradient>
-    <filter id="shadow-{theme}" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="{accent}" flood-opacity="0.15"/>
-    </filter>
-  </defs>
-
   <!-- Container -->
   <rect width="{width}" height="{height}" rx="12" fill="{bg_color}" stroke="{card_border}" stroke-width="1"/>
 
@@ -65,7 +55,7 @@ def render_architecture_svg(output_path="assets/architecture-dark.svg", theme="d
     <rect width="180" height="28" rx="10" fill="{tag_bg}"/>
     <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="{accent}">01. INGESTION</text>
     <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="{text_primary}">Multimodal Inputs</text>
-    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Context & AST Code</text>
+    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Context &amp; AST Code</text>
     <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Vectorized Embeddings</text>
     <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Live Telemetry Feed</text>
   </g>
@@ -77,8 +67,8 @@ def render_architecture_svg(output_path="assets/architecture-dark.svg", theme="d
   </g>
 
   <!-- Node 2: Router -->
-  <g transform="translate(264, 68)" filter="url(#shadow-{theme})">
-    <rect width="180" height="136" rx="10" fill="{node_bg}" stroke="{node_border}" stroke-width="1.5"/>
+  <g transform="translate(264, 68)">
+    <rect width="180" height="136" rx="10" fill="{node_bg}" stroke="{node_border}" stroke-width="2"/>
     <rect width="180" height="28" rx="10" fill="{accent_dim}"/>
     <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="{accent}">02. ORCHESTRATION</text>
     <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="{text_primary}">Model Gateway</text>
@@ -117,7 +107,7 @@ def render_architecture_svg(output_path="assets/architecture-dark.svg", theme="d
     <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="{accent}">04. EXECUTION</text>
     <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="{text_primary}">Agentic Actions</text>
     <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Sandbox Verification</text>
-    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Automated PR & Git</text>
+    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Automated PR &amp; Git</text>
     <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Deterministic Tests</text>
   </g>
 
