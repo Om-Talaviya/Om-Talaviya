@@ -162,31 +162,27 @@
     }
 
     .portrait-wrapper {
-      margin: 0 auto 20px;
-      width: 240px;
-      height: 240px;
-      border-radius: 20px;
-      overflow: hidden;
+      margin: 0 auto 16px;
+      max-width: 280px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+      background: transparent;
     }
 
     .pane-dark .portrait-wrapper {
-      border: 1px solid var(--border-dark);
-      background: #000000;
+      background: transparent;
     }
 
     .pane-light .portrait-wrapper {
-      border: 1px solid var(--border-light);
-      background: #ffffff;
+      background: transparent;
     }
 
     .portrait-wrapper img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      display: block;
+      background: transparent;
     }
 
     .grid-2col {
@@ -309,7 +305,7 @@
       <!-- Centered Hero -->
       <div class="center-content">
         <div class="portrait-wrapper">
-          <img id="portrait-dark" src="assets/hero-portrait-rounded.png" alt="Om Talaviya">
+          <img id="portrait-dark" src="assets/hero-portrait.png" alt="Om Talaviya">
         </div>
         <h2 style="font-size: 20px; font-weight: 800; letter-spacing: 1.5px; margin-bottom: 6px;">OM TALAVIYA</h2>
         <div style="font-size: 13px; font-weight: 600; color: var(--accent); letter-spacing: 1px; margin-bottom: 12px;">AI &bull; SOFTWARE &bull; DATA</div>
@@ -386,7 +382,7 @@
       <!-- Centered Hero -->
       <div class="center-content">
         <div class="portrait-wrapper">
-          <img id="portrait-light" src="assets/hero-portrait-rounded.png" alt="Om Talaviya">
+          <img id="portrait-light" src="assets/hero-portrait.png" alt="Om Talaviya">
         </div>
         <h2 style="font-size: 20px; font-weight: 800; letter-spacing: 1.5px; margin-bottom: 6px; color: #0f172a;">OM TALAVIYA</h2>
         <div style="font-size: 13px; font-weight: 600; color: var(--accent-hover); letter-spacing: 1px; margin-bottom: 12px;">AI &bull; SOFTWARE &bull; DATA</div>
@@ -453,6 +449,35 @@
       </div>
     </div>
 
+  <!-- TRANSPARENCY & MATTE VERIFICATION STRIP -->
+  <div style="max-width: 1400px; margin: 40px auto 0; padding: 24px; background: #161b22; border: 1px solid var(--border-dark); border-radius: 12px;">
+    <div style="font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 8px;">
+      Cutout & Transparency Benchmark (Zero Baked Background)
+    </div>
+    <p style="font-size: 13px; color: var(--subtext-dark); margin-bottom: 20px;">
+      Verifying that the PNG asset is genuinely transparent across contrasting surfaces with no black bounding box or fringe halo.
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+      
+      <!-- Checkerboard Pattern -->
+      <div style="text-align: center; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-dark); padding: 16px; background-image: linear-gradient(45deg, #222 25%, transparent 25%), linear-gradient(-45deg, #222 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #222 75%), linear-gradient(-45deg, transparent 75%, #222 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px; background-color: #333;">
+        <img src="assets/hero-portrait.png" alt="Checkerboard test" style="max-width: 220px; height: auto;">
+        <div style="margin-top: 8px; font-size: 12px; font-weight: 600; color: #fff; background: rgba(0,0,0,0.7); padding: 4px 8px; border-radius: 4px; display: inline-block;">Transparency Grid</div>
+      </div>
+
+      <!-- Pure White -->
+      <div style="text-align: center; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-light); padding: 16px; background: #ffffff;">
+        <img src="assets/hero-portrait.png" alt="White test" style="max-width: 220px; height: auto;">
+        <div style="margin-top: 8px; font-size: 12px; font-weight: 600; color: #1f2328; background: #f0f0f0; padding: 4px 8px; border-radius: 4px; display: inline-block;">Pure White Surface</div>
+      </div>
+
+      <!-- GitHub Dark -->
+      <div style="text-align: center; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-dark); padding: 16px; background: #0d1117;">
+        <img src="assets/hero-portrait.png" alt="GitHub Dark test" style="max-width: 220px; height: auto;">
+        <div style="margin-top: 8px; font-size: 12px; font-weight: 600; color: #f0f6fc; background: #21262d; padding: 4px 8px; border-radius: 4px; display: inline-block;">GitHub Dark Surface</div>
+      </div>
+
+    </div>
   </div>
 
   <script>
