@@ -12,7 +12,7 @@
   <g transform="translate(22, 64)">
     <rect width="396" height="60" rx="8" fill="#161b22" stroke="#21262d" stroke-width="1"/>
     <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#8b949e">SPECIALIZATION</text>
-    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#38bdf8">Agentic AI &bull; Multimodal RAG &bull; Distributed Systems</text>
+    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#38bdf8">Agentic AI &#8226; Multimodal RAG &#8226; Distributed Systems</text>
   </g>
 
   <!-- Row 2: Status & Mode -->
@@ -25,6 +25,6 @@
   <g transform="translate(232, 134)">
     <rect width="186" height="60" rx="8" fill="#161b22" stroke="#21262d" stroke-width="1"/>
     <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#8b949e">PRIMARY RUNTIME</text>
-    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc">Python &bull; TypeScript</text>
+    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc">Python &#8226; TypeScript</text>
   </g>
 </svg>

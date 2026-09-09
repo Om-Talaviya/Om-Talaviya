@@ -206,7 +206,7 @@ def render_activity_velocity_card(stats, theme="dark", accent="#38bdf8", width=4
   <g transform="translate(22, 64)">
     <rect width="396" height="60" rx="8" fill="{tile_bg}" stroke="{tile_border}" stroke-width="1"/>
     <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="{text_secondary}">SPECIALIZATION</text>
-    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="{accent_color}">Agentic AI &bull; Multimodal RAG &bull; Distributed Systems</text>
+    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="{accent_color}">Agentic AI &#8226; Multimodal RAG &#8226; Distributed Systems</text>
   </g>
 
   <!-- Row 2: Status & Mode -->
@@ -219,7 +219,7 @@ def render_activity_velocity_card(stats, theme="dark", accent="#38bdf8", width=4
   <g transform="translate(232, 134)">
     <rect width="186" height="60" rx="8" fill="{tile_bg}" stroke="{tile_border}" stroke-width="1"/>
     <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="{text_secondary}">PRIMARY RUNTIME</text>
-    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="{text_primary}">Python &bull; TypeScript</text>
+    <text x="14" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="{text_primary}">Python &#8226; TypeScript</text>
   </g>
 </svg>"""
     return svg

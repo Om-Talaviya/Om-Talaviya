@@ -18,8 +18,8 @@
   <!-- Card Meta Footer -->
   <g transform="translate(24, 150)">
     <!-- Language -->
-    <circle cx="5" cy="-4" r="5" fill="#3178c6"/>
-    <text x="16" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#656d76">TypeScript</text>
+    <circle cx="5" cy="-4" r="5" fill="#f1e05a"/>
+    <text x="16" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#656d76">JavaScript</text>
 
     <!-- Star Count -->
     <g transform="translate(130, 0)">

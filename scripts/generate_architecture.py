@@ -42,7 +42,7 @@ def render_architecture_svg(output_path="assets/architecture-dark.svg", theme="d
   <!-- Header -->
   <g transform="translate(24, 30)">
     <circle cx="6" cy="-4" r="5" fill="{accent}"/>
-    <text x="20" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="{text_primary}" letter-spacing="0.5">AGENTIC ARCHITECTURE &bull; PIPELINE TOPOLOGY</text>
+    <text x="20" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="{text_primary}" letter-spacing="0.5">AGENTIC ARCHITECTURE &#8226; PIPELINE TOPOLOGY</text>
     <text x="{width - 48}" y="0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="{accent}" text-anchor="end">Deterministic v2.4</text>
   </g>
   <line x1="24" y1="42" x2="{width - 24}" y2="42" stroke="{card_border}" stroke-width="1"/>
@@ -55,9 +55,9 @@ def render_architecture_svg(output_path="assets/architecture-dark.svg", theme="d
     <rect width="180" height="28" rx="10" fill="{tag_bg}"/>
     <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="{accent}">01. INGESTION</text>
     <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="{text_primary}">Multimodal Inputs</text>
-    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Context &amp; AST Code</text>
-    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Vectorized Embeddings</text>
-    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Live Telemetry Feed</text>
+    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Context &amp; AST Code</text>
+    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Vectorized Embeddings</text>
+    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Live Telemetry Feed</text>
   </g>
 
   <!-- Arrow 1 -> 2 -->
@@ -72,9 +72,9 @@ def render_architecture_svg(output_path="assets/architecture-dark.svg", theme="d
     <rect width="180" height="28" rx="10" fill="{accent_dim}"/>
     <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="{accent}">02. ORCHESTRATION</text>
     <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="{text_primary}">Model Gateway</text>
-    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Dynamic Routing Logic</text>
-    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Latency/Cost Optimizer</text>
-    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Fallback Consensus</text>
+    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Dynamic Routing Logic</text>
+    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Latency/Cost Optimizer</text>
+    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Fallback Consensus</text>
   </g>
 
   <!-- Arrow 2 -> 3 -->
@@ -89,9 +89,9 @@ def render_architecture_svg(output_path="assets/architecture-dark.svg", theme="d
     <rect width="180" height="28" rx="10" fill="{tag_bg}"/>
     <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="{accent}">03. KNOWLEDGE</text>
     <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="{text_primary}">Hybrid RAG Engine</text>
-    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Dense + Sparse Vectors</text>
-    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Reciprocal Rank Fusion</text>
-    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Graph Memory Cache</text>
+    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Dense + Sparse Vectors</text>
+    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Reciprocal Rank Fusion</text>
+    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Graph Memory Cache</text>
   </g>
 
   <!-- Arrow 3 -> 4 -->
@@ -106,9 +106,9 @@ def render_architecture_svg(output_path="assets/architecture-dark.svg", theme="d
     <rect width="152" height="28" rx="10" fill="{tag_bg}"/>
     <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="{accent}">04. EXECUTION</text>
     <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="{text_primary}">Agentic Actions</text>
-    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Sandbox Verification</text>
-    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Automated PR &amp; Git</text>
-    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&bull; Deterministic Tests</text>
+    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Sandbox Verification</text>
+    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Automated PR &amp; Git</text>
+    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="{text_secondary}">&#8226; Deterministic Tests</text>
   </g>
 
 </svg>"""
