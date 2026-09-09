@@ -23,11 +23,11 @@
   <a href="https://komarev.com/ghpvc/?username=Om-Talaviya&color=38bdf8&style=for-the-badge&label=VIEWS"><img src="https://komarev.com/ghpvc/?username=Om-Talaviya&color=38bdf8&style=for-the-badge&label=VIEWS" alt="Profile Views" /></a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Open%20for%20Agentic%20AI%20Collaborations-38bdf8?style=flat-square&logo=visualstudiocode&logoColor=white" alt="Status" />
-  <img src="https://img.shields.io/badge/Timezone-IST%20(UTC%2B5:30)-0d1117?style=flat-square&logo=clockify&logoColor=white" alt="Timezone" />
-  <img src="https://img.shields.io/badge/Response%20Time-%3C%2024h-161b22?style=flat-square" alt="Response Time" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/status-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/status-light.svg">
+  <img src="assets/status-dark.svg" width="680" alt="Availability Status &amp; Timezone" />
+</picture>
 
 </div>
 

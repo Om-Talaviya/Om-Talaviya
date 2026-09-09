@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 36" width="720" height="36">
+  <!-- Background Pill -->
+  <rect x="1" y="1" width="718" height="34" rx="17" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+
+  <g transform="translate(20, 22)">
+    <!-- Status Dot -->
+    <circle cx="4" cy="-4" r="5" fill="rgba(56, 189, 248, 0.25)"/>
+    <circle cx="4" cy="-4" r="3" fill="#38bdf8"/>
+    
+    <!-- Status Text -->
+    <text x="16" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="0.4">STATUS:</text>
+    <text x="68" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc">Open for Agentic AI Collaborations</text>
+    
+    <!-- Divider 1 -->
+    <text x="295" y="-1" font-family="monospace" font-size="12" fill="#30363d">|</text>
+    
+    <!-- Timezone -->
+    <text x="312" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#8b949e">IST (UTC+5:30)</text>
+    
+    <!-- Divider 2 -->
+    <text x="410" y="-1" font-family="monospace" font-size="12" fill="#30363d">|</text>
+    
+    <!-- Response Time -->
+    <text x="428" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#8b949e">Response Time:</text>
+    <text x="518" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#38bdf8">&lt; 24h</text>
+  </g>
+</svg>
