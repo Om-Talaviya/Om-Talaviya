@@ -35,12 +35,15 @@
 
 ### `~/` whoami
 
-Hi, I'm **Om Talaviya** — an AI & Systems Engineer specialized in building production-grade agentic platforms, multimodal RAG architectures, and intelligent full-stack systems. Focused on model routing, autonomous developer workflows, and end-to-end reliability.
+<div align="center">
 
-- 🔭 **Currently Building**: [Universal Coding Agent](https://github.com/Om-Talaviya/Universal-Coding-Agent) & [Agentic Multimodal Research Platform](https://github.com/Om-Talaviya/agentic-multimodal-research-platform)
-- ⚡ **Focus Areas**: Agentic AI Orchestration, Multimodal RAG Systems, Model Gateways & Distributed Backends
-- 🛠️ **Core Technologies**: Python, TypeScript, React/Next.js, FastAPI, Node.js, Vector Databases, Docker
-- 💡 **Engineering Approach**: Developing deterministic, autonomous architectures that transform frontier AI research into high-impact software systems
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.svg">
+  <img src="assets/terminal-dark.svg" width="100%" alt="Om Talaviya - Terminal Profile" />
+</picture>
+
+</div>
 
 ---
 

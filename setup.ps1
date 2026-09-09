@@ -48,7 +48,8 @@ Write-Host "`n[3/4] Generating Live GitHub Languages Radar..." -ForegroundColor 
 Write-Host "`n[4/5] Generating Stats and Project Cards..." -ForegroundColor Yellow
 & $pythonCmd scripts/cards.py --user $Username --out assets --projects assets/projects.json --accent "#38bdf8"
 
-Write-Host "`n[5/5] Generating Architecture & Status Cards..." -ForegroundColor Yellow
+Write-Host "`n[5/5] Generating Terminal, Architecture & Status Cards..." -ForegroundColor Yellow
+& $pythonCmd scripts/generate_terminal.py
 & $pythonCmd scripts/generate_architecture.py
 & $pythonCmd scripts/generate_status.py
 
