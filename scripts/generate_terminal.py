@@ -50,37 +50,44 @@ def render_terminal_svg(output_path="assets/terminal-dark.svg", theme="dark"):
   <!-- Terminal Content -->
   <g transform="translate(24, 66)" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13">
     <!-- Command Line -->
-    <text x="0" y="0" font-weight="700" fill="{accent}">om@agentic-core:~$</text>
-    <text x="160" y="0" font-weight="500" fill="{text_primary}">whoami --verbose --systems</text>
+    <text x="0" y="0">
+      <tspan font-weight="700" fill="{accent}">om@agentic-core:~$ </tspan>
+      <tspan font-weight="500" fill="{text_primary}">whoami --verbose --systems</tspan>
+    </text>
 
     <!-- Line 1: Identity -->
-    <text x="0" y="28" font-weight="700" fill="{green}">NAME</text>
-    <text x="100" y="28" fill="{text_muted}">::</text>
-    <text x="130" y="28" font-weight="600" fill="{text_primary}">Om Talaviya</text>
-    <text x="240" y="28" fill="{text_muted}">[AI &amp; Systems Engineer &#8226; Agentic Platforms]</text>
+    <text x="0" y="28">
+      <tspan font-weight="700" fill="{green}">NAME    :: </tspan>
+      <tspan font-weight="600" fill="{text_primary}">Om Talaviya </tspan>
+      <tspan fill="{text_muted}">[AI &amp; Systems Engineer &#8226; Agentic Platforms]</tspan>
+    </text>
 
     <!-- Line 2: Focus -->
-    <text x="0" y="52" font-weight="700" fill="{purple}">FOCUS</text>
-    <text x="100" y="52" fill="{text_muted}">::</text>
-    <text x="130" y="52" fill="{text_primary}">Agentic AI Orchestration &#8226; Multimodal RAG &#8226; Model Gateways</text>
+    <text x="0" y="52">
+      <tspan font-weight="700" fill="{purple}">FOCUS   :: </tspan>
+      <tspan fill="{text_primary}">Agentic AI Orchestration &#8226; Multimodal RAG &#8226; Model Gateways</tspan>
+    </text>
 
     <!-- Line 3: Active Systems -->
-    <text x="0" y="76" font-weight="700" fill="{yellow}">ACTIVE</text>
-    <text x="100" y="76" fill="{text_muted}">::</text>
-    <text x="130" y="76" fill="{accent}">Universal-Coding-Agent</text>
-    <text x="325" y="76" fill="{text_muted}">[Supervisor] &amp;</text>
-    <text x="460" y="76" fill="{accent}">Research-Platform</text>
-    <text x="625" y="76" fill="{text_muted}">[Multimodal]</text>
+    <text x="0" y="76">
+      <tspan font-weight="700" fill="{yellow}">ACTIVE  :: </tspan>
+      <tspan font-weight="600" fill="{accent}">Universal-Coding-Agent </tspan>
+      <tspan fill="{text_muted}">[Supervisor] &amp; </tspan>
+      <tspan font-weight="600" fill="{accent}">Research-Platform </tspan>
+      <tspan fill="{text_muted}">[Multimodal RAG]</tspan>
+    </text>
 
     <!-- Line 4: Core Stack -->
-    <text x="0" y="100" font-weight="700" fill="{green}">STACK</text>
-    <text x="100" y="100" fill="{text_muted}">::</text>
-    <text x="130" y="100" fill="{text_primary}">Python &#8226; TypeScript &#8226; FastAPI &#8226; Next.js &#8226; Vector DBs &#8226; Docker</text>
+    <text x="0" y="100">
+      <tspan font-weight="700" fill="{green}">STACK   :: </tspan>
+      <tspan fill="{text_primary}">Python &#8226; TypeScript &#8226; FastAPI &#8226; Next.js &#8226; Vector DBs &#8226; Docker</tspan>
+    </text>
 
     <!-- Line 5: Approach -->
-    <text x="0" y="124" font-weight="700" fill="{accent}">STATUS</text>
-    <text x="100" y="124" fill="{text_muted}">::</text>
-    <text x="130" y="124" fill="{text_muted}">Architecting deterministic, autonomous AI software systems</text>
+    <text x="0" y="124">
+      <tspan font-weight="700" fill="{accent}">STATUS  :: </tspan>
+      <tspan fill="{text_muted}">Architecting deterministic, autonomous AI software systems</tspan>
+    </text>
   </g>
 </svg>"""
 

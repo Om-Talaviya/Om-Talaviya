@@ -17,36 +17,43 @@
   <!-- Terminal Content -->
   <g transform="translate(24, 66)" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13">
     <!-- Command Line -->
-    <text x="0" y="0" font-weight="700" fill="#0284c7">om@agentic-core:~$</text>
-    <text x="160" y="0" font-weight="500" fill="#1f2328">whoami --verbose --systems</text>
+    <text x="0" y="0">
+      <tspan font-weight="700" fill="#0284c7">om@agentic-core:~$ </tspan>
+      <tspan font-weight="500" fill="#1f2328">whoami --verbose --systems</tspan>
+    </text>
 
     <!-- Line 1: Identity -->
-    <text x="0" y="28" font-weight="700" fill="#1a7f37">NAME</text>
-    <text x="100" y="28" fill="#656d76">::</text>
-    <text x="130" y="28" font-weight="600" fill="#1f2328">Om Talaviya</text>
-    <text x="240" y="28" fill="#656d76">[AI &amp; Systems Engineer &#8226; Agentic Platforms]</text>
+    <text x="0" y="28">
+      <tspan font-weight="700" fill="#1a7f37">NAME    :: </tspan>
+      <tspan font-weight="600" fill="#1f2328">Om Talaviya </tspan>
+      <tspan fill="#656d76">[AI &amp; Systems Engineer &#8226; Agentic Platforms]</tspan>
+    </text>
 
     <!-- Line 2: Focus -->
-    <text x="0" y="52" font-weight="700" fill="#8250df">FOCUS</text>
-    <text x="100" y="52" fill="#656d76">::</text>
-    <text x="130" y="52" fill="#1f2328">Agentic AI Orchestration &#8226; Multimodal RAG &#8226; Model Gateways</text>
+    <text x="0" y="52">
+      <tspan font-weight="700" fill="#8250df">FOCUS   :: </tspan>
+      <tspan fill="#1f2328">Agentic AI Orchestration &#8226; Multimodal RAG &#8226; Model Gateways</tspan>
+    </text>
 
     <!-- Line 3: Active Systems -->
-    <text x="0" y="76" font-weight="700" fill="#9a6700">ACTIVE</text>
-    <text x="100" y="76" fill="#656d76">::</text>
-    <text x="130" y="76" fill="#0284c7">Universal-Coding-Agent</text>
-    <text x="325" y="76" fill="#656d76">[Supervisor] &amp;</text>
-    <text x="460" y="76" fill="#0284c7">Research-Platform</text>
-    <text x="625" y="76" fill="#656d76">[Multimodal]</text>
+    <text x="0" y="76">
+      <tspan font-weight="700" fill="#9a6700">ACTIVE  :: </tspan>
+      <tspan font-weight="600" fill="#0284c7">Universal-Coding-Agent </tspan>
+      <tspan fill="#656d76">[Supervisor] &amp; </tspan>
+      <tspan font-weight="600" fill="#0284c7">Research-Platform </tspan>
+      <tspan fill="#656d76">[Multimodal RAG]</tspan>
+    </text>
 
     <!-- Line 4: Core Stack -->
-    <text x="0" y="100" font-weight="700" fill="#1a7f37">STACK</text>
-    <text x="100" y="100" fill="#656d76">::</text>
-    <text x="130" y="100" fill="#1f2328">Python &#8226; TypeScript &#8226; FastAPI &#8226; Next.js &#8226; Vector DBs &#8226; Docker</text>
+    <text x="0" y="100">
+      <tspan font-weight="700" fill="#1a7f37">STACK   :: </tspan>
+      <tspan fill="#1f2328">Python &#8226; TypeScript &#8226; FastAPI &#8226; Next.js &#8226; Vector DBs &#8226; Docker</tspan>
+    </text>
 
     <!-- Line 5: Approach -->
-    <text x="0" y="124" font-weight="700" fill="#0284c7">STATUS</text>
-    <text x="100" y="124" fill="#656d76">::</text>
-    <text x="130" y="124" fill="#656d76">Architecting deterministic, autonomous AI software systems</text>
+    <text x="0" y="124">
+      <tspan font-weight="700" fill="#0284c7">STATUS  :: </tspan>
+      <tspan fill="#656d76">Architecting deterministic, autonomous AI software systems</tspan>
+    </text>
   </g>
 </svg>
