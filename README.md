@@ -35,10 +35,6 @@
 
 ### `~/` whoami
 
-```console
-$ cat about.txt
-```
-
 Hi, I'm **Om Talaviya** — an AI & Systems Engineer specialized in building production-grade agentic platforms, multimodal RAG architectures, and intelligent full-stack systems. Focused on model routing, autonomous developer workflows, and end-to-end reliability.
 
 - 🔭 **Currently Building**: [Universal Coding Agent](https://github.com/Om-Talaviya/Universal-Coding-Agent) & [Agentic Multimodal Research Platform](https://github.com/Om-Talaviya/agentic-multimodal-research-platform)
