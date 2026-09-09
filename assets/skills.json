@@ -1,0 +1,12 @@
+{
+  "title": "Core Competencies",
+  "axes": [
+    { "label": "Agentic AI", "value": 88 },
+    { "label": "Multimodal RAG", "value": 86 },
+    { "label": "Python / FastAPI", "value": 90 },
+    { "label": "TypeScript / React", "value": 84 },
+    { "label": "Model Routing", "value": 87 },
+    { "label": "Distributed Backend", "value": 82 },
+    { "label": "Vector Search / DBs", "value": 80 }
+  ]
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 380" width="420" height="380">
+  <rect width="420" height="380" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+  <text x="210.0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2328" text-anchor="middle" letter-spacing="0.5">CORE COMPETENCIES</text>
+  <line x1="105.0" y1="44" x2="315.0" y2="44" stroke="#0284c7" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+  <polygon points="210.0,176.9 229.6,186.4 234.5,207.6 220.9,224.6 199.1,224.6 185.5,207.6 190.4,186.4" fill="none" stroke="#eaeef2" stroke-width="1" stroke-dasharray="3,3"/>
+  <polygon points="210.0,151.8 249.2,170.7 258.9,213.2 231.8,247.2 188.2,247.2 161.1,213.2 170.8,170.7" fill="none" stroke="#eaeef2" stroke-width="1" stroke-dasharray="3,3"/>
+  <polygon points="210.0,126.8 268.8,155.1 283.4,218.7 242.6,269.8 177.4,269.8 136.6,218.7 151.2,155.1" fill="none" stroke="#eaeef2" stroke-width="1" stroke-dasharray="3,3"/>
+  <polygon points="210.0,101.7 288.4,139.5 307.8,224.3 253.5,292.4 166.5,292.4 112.2,224.3 131.6,139.5" fill="none" stroke="#eaeef2" stroke-width="1" stroke-dasharray="3,3"/>
+  <polygon points="210.0,76.6 308.0,123.8 332.3,229.9 264.4,315.0 155.6,315.0 87.7,229.9 112.0,123.8" fill="none" stroke="#eaeef2" stroke-width="1" stroke-dasharray="none"/>
+  <line x1="210.0" y1="202.0" x2="210.0" y2="76.6" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="210.0" y1="202.0" x2="308.0" y2="123.8" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="210.0" y1="202.0" x2="332.3" y2="229.9" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="210.0" y1="202.0" x2="264.4" y2="315.0" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="210.0" y1="202.0" x2="155.6" y2="315.0" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="210.0" y1="202.0" x2="87.7" y2="229.9" stroke="#d0d7de" stroke-width="1"/>
+  <line x1="210.0" y1="202.0" x2="112.0" y2="123.8" stroke="#d0d7de" stroke-width="1"/>
+  <polygon points="210.0,91.6 294.3,134.8 320.0,227.1 255.7,296.9 162.7,300.3 109.8,224.9 131.6,139.5" fill="#0284c7" fill-opacity="0.20" stroke="#0284c7" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="210.0" cy="91.6" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="294.3" cy="134.8" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="320.0" cy="227.1" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="255.7" cy="296.9" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="162.7" cy="300.3" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="109.8" cy="224.9" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="131.6" cy="139.5" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="2"/>
+  <text x="210.0" y="56.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#24292f" text-anchor="middle">Agentic AI (88)</text>
+  <text x="326.8" y="112.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#24292f" text-anchor="start">Multimodal RAG (86)</text>
+  <text x="355.7" y="239.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#24292f" text-anchor="start">Python / FastAPI (90)</text>
+  <text x="274.8" y="340.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#24292f" text-anchor="start">TypeScript / React (84)</text>
+  <text x="145.2" y="340.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#24292f" text-anchor="end">Model Routing (87)</text>
+  <text x="64.3" y="239.2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#24292f" text-anchor="end">Distributed Backend (82)</text>
+  <text x="93.2" y="112.9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#24292f" text-anchor="end">Vector Search / DBs (80)</text>
+</svg>

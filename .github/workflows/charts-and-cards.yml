@@ -1,0 +1,51 @@
+name: Refresh Charts and Cards
+
+on:
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow
+
+      - name: Generate Radar Charts
+        run: |
+          python scripts/radar.py --data assets/skills.json -o assets/radar --accent "#38bdf8"
+          python scripts/radar.py --github ${{ github.repository_owner }} -o assets/radar-langs --limit 7 --values --curve 0.4 --exclude "html,css,shell,makefile,dockerfile,batchfile" --accent "#38bdf8"
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Generate Stat and Project Cards
+        run: |
+          python scripts/cards.py --user ${{ github.repository_owner }} --out assets --projects assets/projects.json --accent "#38bdf8"
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: refresh profile charts and cards [skip ci]"
+            git push
+          fi

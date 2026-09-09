@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "repo": "Universal-Coding-Agent",
+      "description": "Provider-agnostic universal coding agent orchestrating frontier LLMs with autonomous tool loops via OpenCode."
+    },
+    {
+      "repo": "agentic-multimodal-research-platform",
+      "description": "Distributed agent orchestration platform featuring multimodal RAG, dynamic model routing, and asynchronous pipelines."
+    },
+    {
+      "repo": "knowledge-intelligence-platform",
+      "description": "Production-grade multimodal RAG platform for document intelligence, hybrid retrieval, grounded citations, and automated evaluation."
+    },
+    {
+      "repo": "food-production-cost-optimizer",
+      "description": "Full-stack manufacturing cost optimizer with batch economics simulation, what-if engine, statistical forecasting, and AI advisory."
+    }
+  ]
+}

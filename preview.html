@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om Talaviya - GitHub Profile Live Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --bg-dark: #0d1117;
+      --card-dark: #161b22;
+      --border-dark: #30363d;
+      --text-dark: #f0f6fc;
+      --subtext-dark: #8b949e;
+
+      --bg-light: #f6f8fa;
+      --card-light: #ffffff;
+      --border-light: #d0d7de;
+      --text-light: #1f2328;
+      --subtext-light: #656d76;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #090d13;
+      color: #e6edf3;
+      padding: 32px 20px;
+    }
+
+    header {
+      max-width: 1400px;
+      margin: 0 auto 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .title-group h1 {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ffffff 40%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .title-group p {
+      color: var(--subtext-dark);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    button {
+      background: var(--card-dark);
+      color: var(--text-dark);
+      border: 1px solid var(--border-dark);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .theme-split {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    @media (max-width: 1024px) {
+      .theme-split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .theme-pane {
+      border-radius: 12px;
+      padding: 32px 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      border: 1px solid;
+    }
+
+    .pane-dark {
+      background: var(--bg-dark);
+      border-color: var(--border-dark);
+      color: var(--text-dark);
+    }
+
+    .pane-light {
+      background: var(--bg-light);
+      border-color: var(--border-light);
+      color: var(--text-light);
+    }
+
+    .pane-header {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+    }
+
+    .pane-dark .pane-header {
+      color: var(--accent);
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .pane-light .pane-header {
+      color: var(--accent-hover);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 28px 0 16px;
+      opacity: 0.75;
+    }
+
+    .center-content {
+      text-align: center;
+    }
+
+    .portrait-wrapper {
+      margin: 0 auto 16px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pane-dark .portrait-wrapper {
+      border: 2px solid var(--border-dark);
+      background: #080c10;
+    }
+
+    .pane-light .portrait-wrapper {
+      border: 2px solid var(--border-light);
+      background: #ffffff;
+    }
+
+    .portrait-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .grid-2col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .asset-card {
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .asset-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .terminal-box {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .pane-dark .terminal-box {
+      background: #161b22;
+      border: 1px solid var(--border-dark);
+      color: #c9d1d9;
+    }
+
+    .pane-light .terminal-box {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      color: #24292f;
+    }
+
+    .tech-strip {
+      margin: 16px 0 24px;
+      text-align: center;
+    }
+
+    .tech-strip img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .stats-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      margin-top: 16px;
+    }
+
+    .stats-table th, .stats-table td {
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    .pane-dark .stats-table th {
+      background: #161b22;
+      border-bottom: 1px solid var(--border-dark);
+      color: var(--subtext-dark);
+    }
+    .pane-dark .stats-table td {
+      border-bottom: 1px solid #21262d;
+    }
+
+    .pane-light .stats-table th {
+      background: #eaeef2;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--subtext-light);
+    }
+    .pane-light .stats-table td {
+      border-bottom: 1px solid #eaeef2;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="title-group">
+      <h1>Om Talaviya &bull; Portfolio System</h1>
+      <p>Local Dual-Theme Live Preview &bull; Automated Vector Assets</p>
+    </div>
+    <div class="controls">
+      <button onclick="reloadPortraits()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+        Replay Portrait Scan
+      </button>
+      <button onclick="window.location.reload()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        Refresh All
+      </button>
+    </div>
+  </header>
+
+  <div class="theme-split">
+    
+    <!-- DARK THEME PANE -->
+    <div class="pane-dark theme-pane">
+      <div class="pane-header">
+        <span>GitHub Dark Theme</span>
+        <span>#0D1117</span>
+      </div>
+
+      <!-- Centered Hero -->
+      <div class="center-content">
+        <div class="portrait-wrapper">
+          <img id="portrait-dark" src="assets/portrait-dark.svg" alt="Portrait">
+        </div>
+        <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2600&pause=900&color=38BDF8&center=true&vCenter=true&width=480&lines=Om+Talaviya;AI+%26+Systems+Engineer;Building+Agentic+Platforms+%26+Multimodal+RAG;Full-Stack+Architect" alt="Typing Banner" style="max-width: 100%;">
+      </div>
+
+      <!-- Whoami -->
+      <div class="section-title">Terminal Summary</div>
+      <div class="terminal-box">
+        <span style="color: var(--accent);">$</span> whoami<br>
+        <strong>Om Talaviya</strong> — AI & Systems Engineer specialized in building production-grade agentic platforms, multimodal RAG architectures, and intelligent full-stack systems.<br><br>
+        &bull; <strong>Building:</strong> Universal-Coding-Agent & Multimodal Research Platform<br>
+        &bull; <strong>Focus:</strong> Agentic Orchestration, Model Gateways, Hybrid Retrieval<br>
+        &bull; <strong>Stack:</strong> Python, TypeScript, React, FastAPI, Docker, Vector DBs
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="section-title">Toolbox</div>
+      <div class="tech-strip">
+        <img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,nodejs,fastapi,postgres,mongodb,docker,git,github,vscode,tailwind,html,css&perline=8" alt="Tech Stack">
+      </div>
+
+      <!-- Radars -->
+      <div class="section-title">Radar Analytics</div>
+      <div class="grid-2col">
+        <div class="asset-card">
+          <img src="assets/radar-dark.svg" alt="Skills Radar">
+        </div>
+        <div class="asset-card">
+          <img src="assets/radar-langs-dark.svg" alt="Languages Radar">
+        </div>
+      </div>
+
+      <!-- Stat Card -->
+      <div class="section-title">GitHub Statistics</div>
+      <div class="asset-card" style="margin-bottom: 20px;">
+        <img src="assets/card-stats-dark.svg" alt="Stats Card">
+      </div>
+
+      <!-- Featured Projects (2x2) -->
+      <div class="section-title">Featured Projects (2x2 Grid)</div>
+      <div class="grid-2col">
+        <div class="asset-card">
+          <img src="assets/card-universal-coding-agent-dark.svg" alt="Universal Coding Agent">
+        </div>
+        <div class="asset-card">
+          <img src="assets/card-agentic-multimodal-research-platform-dark.svg" alt="Research Platform">
+        </div>
+        <div class="asset-card">
+          <img src="assets/card-knowledge-intelligence-platform-dark.svg" alt="Knowledge Intelligence">
+        </div>
+        <div class="asset-card">
+          <img src="assets/card-food-production-cost-optimizer-dark.svg" alt="Cost Optimizer">
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHT THEME PANE -->
+    <div class="pane-light theme-pane">
+      <div class="pane-header">
+        <span>GitHub Light Theme</span>
+        <span>#FFFFFF</span>
+      </div>
+
+      <!-- Centered Hero -->
+      <div class="center-content">
+        <div class="portrait-wrapper">
+          <img id="portrait-light" src="assets/portrait-light.svg" alt="Portrait">
+        </div>
+        <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2600&pause=900&color=0284C7&center=true&vCenter=true&width=480&lines=Om+Talaviya;AI+%26+Systems+Engineer;Building+Agentic+Platforms+%26+Multimodal+RAG;Full-Stack+Architect" alt="Typing Banner" style="max-width: 100%;">
+      </div>
+
+      <!-- Whoami -->
+      <div class="section-title">Terminal Summary</div>
+      <div class="terminal-box">
+        <span style="color: var(--accent-hover);">$</span> whoami<br>
+        <strong>Om Talaviya</strong> — AI & Systems Engineer specialized in building production-grade agentic platforms, multimodal RAG architectures, and intelligent full-stack systems.<br><br>
+        &bull; <strong>Building:</strong> Universal-Coding-Agent & Multimodal Research Platform<br>
+        &bull; <strong>Focus:</strong> Agentic Orchestration, Model Gateways, Hybrid Retrieval<br>
+        &bull; <strong>Stack:</strong> Python, TypeScript, React, FastAPI, Docker, Vector DBs
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="section-title">Toolbox</div>
+      <div class="tech-strip">
+        <img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,nodejs,fastapi,postgres,mongodb,docker,git,github,vscode,tailwind,html,css&perline=8" alt="Tech Stack">
+      </div>
+
+      <!-- Radars -->
+      <div class="section-title">Radar Analytics</div>
+      <div class="grid-2col">
+        <div class="asset-card">
+          <img src="assets/radar-light.svg" alt="Skills Radar">
+        </div>
+        <div class="asset-card">
+          <img src="assets/radar-langs-light.svg" alt="Languages Radar">
+        </div>
+      </div>
+
+      <!-- Stat Card -->
+      <div class="section-title">GitHub Statistics</div>
+      <div class="asset-card" style="margin-bottom: 20px;">
+        <img src="assets/card-stats-light.svg" alt="Stats Card">
+      </div>
+
+      <!-- Featured Projects (2x2) -->
+      <div class="section-title">Featured Projects (2x2 Grid)</div>
+      <div class="grid-2col">
+        <div class="asset-card">
+          <img src="assets/card-universal-coding-agent-light.svg" alt="Universal Coding Agent">
+        </div>
+        <div class="asset-card">
+          <img src="assets/card-agentic-multimodal-research-platform-light.svg" alt="Research Platform">
+        </div>
+        <div class="asset-card">
+          <img src="assets/card-knowledge-intelligence-platform-light.svg" alt="Knowledge Intelligence">
+        </div>
+        <div class="asset-card">
+          <img src="assets/card-food-production-cost-optimizer-light.svg" alt="Cost Optimizer">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function reloadPortraits() {
+      const dark = document.getElementById('portrait-dark');
+      const light = document.getElementById('portrait-light');
+      const t = new Date().getTime();
+      dark.src = 'assets/portrait-dark.svg?t=' + t;
+      light.src = 'assets/portrait-light.svg?t=' + t;
+    }
+  </script>
+</body>
+</html>
