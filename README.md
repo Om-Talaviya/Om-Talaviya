@@ -127,16 +127,6 @@ Hi, I'm **Om Talaviya** — an AI & Systems Engineer specialized in building pro
   </picture>
 </div>
 
-<br/>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/metrics.achievements.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/metrics.achievements.svg">
-    <img src="assets/metrics.achievements.svg" width="100%" alt="GitHub Achievements & Community Profile" />
-  </picture>
-</div>
-
 ---
 
 ### `~/` featured-systems
