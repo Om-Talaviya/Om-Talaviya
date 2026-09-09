@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240">
+  <defs>
+    <linearGradient id="glowGrad-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="shadow-dark" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#38bdf8" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="900" height="240" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 30)">
+    <circle cx="6" cy="-4" r="5" fill="#38bdf8"/>
+    <text x="20" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#f0f6fc" letter-spacing="0.5">AGENTIC ARCHITECTURE &bull; PIPELINE TOPOLOGY</text>
+    <text x="852" y="0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="end">Deterministic v2.4</text>
+  </g>
+  <line x1="24" y1="42" x2="876" y2="42" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Nodes Layout -->
+  
+  <!-- Node 1: Input -->
+  <g transform="translate(36, 68)">
+    <rect width="180" height="136" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1.5"/>
+    <rect width="180" height="28" rx="10" fill="rgba(56, 189, 248, 0.10)"/>
+    <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38bdf8">01. INGESTION</text>
+    <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#f0f6fc">Multimodal Inputs</text>
+    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Context & AST Code</text>
+    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Vectorized Embeddings</text>
+    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Live Telemetry Feed</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <g transform="translate(224, 130)">
+    <line x1="0" y1="0" x2="24" y2="0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,3"/>
+    <polygon points="24,-4 32,0 24,4" fill="#38bdf8"/>
+  </g>
+
+  <!-- Node 2: Router -->
+  <g transform="translate(264, 68)" filter="url(#shadow-dark)">
+    <rect width="180" height="136" rx="10" fill="#161b22" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="180" height="28" rx="10" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38bdf8">02. ORCHESTRATION</text>
+    <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#f0f6fc">Model Gateway</text>
+    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Dynamic Routing Logic</text>
+    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Latency/Cost Optimizer</text>
+    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Fallback Consensus</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <g transform="translate(452, 130)">
+    <line x1="0" y1="0" x2="24" y2="0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,3"/>
+    <polygon points="24,-4 32,0 24,4" fill="#38bdf8"/>
+  </g>
+
+  <!-- Node 3: Hybrid Retrieval -->
+  <g transform="translate(488, 68)">
+    <rect width="180" height="136" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1.5"/>
+    <rect width="180" height="28" rx="10" fill="rgba(56, 189, 248, 0.10)"/>
+    <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38bdf8">03. KNOWLEDGE</text>
+    <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#f0f6fc">Hybrid RAG Engine</text>
+    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Dense + Sparse Vectors</text>
+    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Reciprocal Rank Fusion</text>
+    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Graph Memory Cache</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <g transform="translate(676, 130)">
+    <line x1="0" y1="0" x2="24" y2="0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,3"/>
+    <polygon points="24,-4 32,0 24,4" fill="#38bdf8"/>
+  </g>
+
+  <!-- Node 4: Autonomous Execution -->
+  <g transform="translate(712, 68)">
+    <rect width="152" height="136" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1.5"/>
+    <rect width="152" height="28" rx="10" fill="rgba(56, 189, 248, 0.10)"/>
+    <text x="14" y="19" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#38bdf8">04. EXECUTION</text>
+    <text x="14" y="54" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#f0f6fc">Agentic Actions</text>
+    <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Sandbox Verification</text>
+    <text x="14" y="94" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Automated PR & Git</text>
+    <text x="14" y="114" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#8b949e">&bull; Deterministic Tests</text>
+  </g>
+
+</svg>

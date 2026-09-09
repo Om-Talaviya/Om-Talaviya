@@ -22,6 +22,12 @@
   <a href="https://komarev.com/ghpvc/?username=Om-Talaviya&color=38bdf8&style=for-the-badge&label=VIEWS"><img src="https://komarev.com/ghpvc/?username=Om-Talaviya&color=38bdf8&style=for-the-badge&label=VIEWS" alt="Profile Views" /></a>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Open%20for%20Agentic%20AI%20Collaborations-38bdf8?style=flat-square&logo=visualstudiocode&logoColor=white" alt="Status" />
+  <img src="https://img.shields.io/badge/Timezone-IST%20(UTC%2B5:30)-0d1117?style=flat-square&logo=clockify&logoColor=white" alt="Timezone" />
+  <img src="https://img.shields.io/badge/Response%20Time-%3C%2024h-161b22?style=flat-square" alt="Response Time" />
+</p>
+
 </div>
 
 ---
@@ -38,6 +44,20 @@ Hi, I'm **Om Talaviya** — an AI & Systems Engineer specialized in building pro
 - ⚡ **Focus Areas**: Agentic AI Orchestration, Multimodal RAG Systems, Model Gateways & Distributed Backends
 - 🛠️ **Core Technologies**: Python, TypeScript, React/Next.js, FastAPI, Node.js, Vector Databases, Docker
 - 💡 **Engineering Approach**: Developing deterministic, autonomous architectures that transform frontier AI research into high-impact software systems
+
+---
+
+### `~/` architecture-pipeline
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/architecture-light.svg">
+  <img src="assets/architecture-dark.svg" width="100%" alt="Agentic AI Architecture Pipeline" />
+</picture>
+
+</div>
 
 ---
 
@@ -104,6 +124,16 @@ Hi, I'm **Om Talaviya** — an AI & Systems Engineer specialized in building pro
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-light.svg">
     <img src="https://raw.githubusercontent.com/Om-Talaviya/Om-Talaviya/output/snake-dark.svg" width="100%" alt="Contribution Snake" />
+  </picture>
+</div>
+
+<br/>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/metrics.achievements.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/metrics.achievements.svg">
+    <img src="assets/metrics.achievements.svg" width="100%" alt="GitHub Achievements & Community Profile" />
   </picture>
 </div>
 
