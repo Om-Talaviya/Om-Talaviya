@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-portrait-animated.gif">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-portrait-animated.gif">
-  <img src="assets/hero-portrait-animated.gif" width="340" alt="Om Talaviya" style="max-width: 100%; height: auto;" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-portrait-scramble.gif">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-portrait-scramble.gif">
+  <img src="assets/hero-portrait-scramble.gif" width="340" alt="Om Talaviya" style="max-width: 100%; height: auto;" />
 </picture>
 
 <br/>
