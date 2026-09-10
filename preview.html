@@ -282,13 +282,17 @@
       <p>Local Dual-Theme Live Preview &bull; Automated Vector Assets</p>
     </div>
     <div class="controls">
-      <button onclick="reloadPortraits()">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-        Replay Portrait Scan
+      <button id="btn-animated" style="background: #38bdf8; color: #000; font-weight: 700;" onclick="switchHero('assets/hero-portrait-animated.gif', this)">
+        ✨ Dot Scramble Hero (Active)
+      </button>
+      <button id="btn-static" onclick="switchHero('assets/hero-portrait.png', this)">
+        📷 Static PNG Fallback
+      </button>
+      <button onclick="replayCurrent()">
+        🔄 Replay Animation
       </button>
       <button onclick="window.location.reload()">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-        Refresh All
+        ⚡ Refresh Page
       </button>
     </div>
   </header>
@@ -485,12 +489,32 @@
   </div>
 
   <script>
-    function reloadPortraits() {
+    let currentSrc = 'assets/hero-portrait-animated.gif';
+
+    function switchHero(src, btn) {
+      currentSrc = src;
+      const t = new Date().getTime();
+      const finalSrc = src.includes('?') ? src : `${src}?t=${t}`;
+      
       const dark = document.getElementById('portrait-dark');
       const light = document.getElementById('portrait-light');
-      const t = new Date().getTime();
-      dark.src = 'assets/portrait-dark.svg?t=' + t;
-      light.src = 'assets/portrait-light.svg?t=' + t;
+      if (dark) dark.src = finalSrc;
+      if (light) light.src = finalSrc;
+      
+      document.querySelectorAll('.controls button').forEach(b => {
+        b.style.background = 'var(--card-dark)';
+        b.style.color = 'var(--text-dark)';
+        b.style.fontWeight = '600';
+      });
+      if (btn) {
+        btn.style.background = 'var(--accent)';
+        btn.style.color = '#000';
+        btn.style.fontWeight = '700';
+      }
+    }
+
+    function replayCurrent() {
+      switchHero(currentSrc, null);
     }
   </script>
 </body>
