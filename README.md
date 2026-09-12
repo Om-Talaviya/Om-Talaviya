@@ -163,11 +163,11 @@
       </a>
     </td>
     <td width="50%" align="center">
-      <a href="https://github.com/Om-Talaviya/food-production-cost-optimizer">
+      <a href="https://github.com/Om-Talaviya/claude-curl-to-skill-">
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="assets/card-food-production-cost-optimizer-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="assets/card-food-production-cost-optimizer-light.svg">
-          <img src="assets/card-food-production-cost-optimizer-dark.svg" width="100%" alt="Food Production Cost Optimizer" />
+          <source media="(prefers-color-scheme: dark)" srcset="assets/card-claude-curl-to-skill-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="assets/card-claude-curl-to-skill-light.svg">
+          <img src="assets/card-claude-curl-to-skill-dark.svg" width="100%" alt="Claude Curl To Skill" />
         </picture>
       </a>
     </td>

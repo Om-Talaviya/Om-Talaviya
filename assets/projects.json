@@ -13,8 +13,9 @@
       "description": "Production-grade multimodal RAG platform for document intelligence, hybrid retrieval, grounded citations, and automated evaluation."
     },
     {
-      "repo": "food-production-cost-optimizer",
-      "description": "Full-stack manufacturing cost optimizer with batch economics simulation, what-if engine, statistical forecasting, and AI advisory."
+      "repo": "claude-curl-to-skill",
+      "description": "Deterministic CLI compiler that turns API docs curl commands into production Claude Agent Skills with executable Python runners.",
+      "language": "Python"
     }
   ]
 }

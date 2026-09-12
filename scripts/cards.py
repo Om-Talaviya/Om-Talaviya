@@ -381,13 +381,16 @@ def main():
     for p in projects_list:
         repo_name = p.get("repo")
         override_desc = p.get("description")
+        explicit_lang = p.get("language")
         repo_info = repos_map.get(repo_name.lower()) or {
             "name": repo_name,
             "description": override_desc,
-            "language": "Python" if "research" in repo_name.lower() or "knowledge" in repo_name.lower() else "TypeScript",
+            "language": explicit_lang or ("Python" if any(k in repo_name.lower() for k in ("research", "knowledge", "curl", "skill")) else "TypeScript"),
             "stargazers_count": 0,
             "forks_count": 0
         }
+        if explicit_lang:
+            repo_info["language"] = explicit_lang
 
         # Safe slug for filename
         slug = repo_name.lower().replace("/", "-")

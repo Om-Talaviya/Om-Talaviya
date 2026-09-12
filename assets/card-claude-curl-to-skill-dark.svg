@@ -9,17 +9,17 @@
   <g transform="translate(24, 34)">
     <!-- Book/Repo Icon -->
     <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11 1h4.25a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.25a2.25 2.25 0 0 0-1.75.836A.75.75 0 0 1 8.5 14a.75.75 0 0 1-.5-.164A2.25 2.25 0 0 0 6.25 13H2a.75.75 0 0 1-.75-.75V1.75z" fill="#58a6ff" transform="scale(1.1)"/>
-    <text x="26" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#58a6ff">food-production-cost-optimizer</text>
+    <text x="26" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#58a6ff">claude-curl-to-skill</text>
   </g>
 
   <!-- Description Lines -->
-  <text x="24" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">Full-stack manufacturing cost optimizer with batch</text><text x="24" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">economics simulation, what-if engine, statistical</text><text x="24" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">forecasting, and AI advisory.</text>
+  <text x="24" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">Deterministic CLI compiler that turns API docs</text><text x="24" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">curl commands into production Claude Agent Skills</text><text x="24" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8b949e">with executable Python runners.</text>
 
   <!-- Card Meta Footer -->
   <g transform="translate(24, 150)">
     <!-- Language -->
-    <circle cx="5" cy="-4" r="5" fill="#f1e05a"/>
-    <text x="16" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#7d8590">JavaScript</text>
+    <circle cx="5" cy="-4" r="5" fill="#3572A5"/>
+    <text x="16" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#7d8590">Python</text>
 
     <!-- Star Count -->
     <g transform="translate(130, 0)">
