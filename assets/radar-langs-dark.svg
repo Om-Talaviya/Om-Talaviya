@@ -22,8 +22,8 @@
   <circle cx="182.9" cy="186.3" r="4" fill="#38bdf8" stroke="#0d1117" stroke-width="2"/>
   <text x="210.0" y="56.6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="middle">Python (100)</text>
   <text x="339.4" y="131.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="start">TypeScript (66)</text>
-  <text x="339.4" y="280.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="start">Kotlin (25)</text>
-  <text x="210.0" y="355.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="middle">JavaScript (25)</text>
+  <text x="339.4" y="280.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="start">JavaScript (25)</text>
+  <text x="210.0" y="355.4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="middle">Kotlin (25)</text>
   <text x="80.6" y="280.7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="end">PowerShell (25)</text>
   <text x="80.6" y="131.3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#f0f6fc" text-anchor="end">Mako (25)</text>
 </svg>
